@@ -4,7 +4,7 @@ const sequelize = require('../config/connection');
 
 class Note extends Model {}
 
-User.init(
+Note.init(
   {
     id: {
       type: DataTypes.INTEGER,

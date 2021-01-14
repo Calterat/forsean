@@ -7,7 +7,7 @@ const seed = async () => {
   console.log('This may take a second!\n');
   await sequelize.sync({ force: true });
   await seedNote();
-  await seedUser();  
+  // await seedUser();  
 }
 
 seed();
