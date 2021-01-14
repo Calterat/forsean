@@ -32,10 +32,10 @@ Note.init(
   },
   {
     sequelize,
-    timestamp: true,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user'
+    modelName: 'note'
   }
 );
 
