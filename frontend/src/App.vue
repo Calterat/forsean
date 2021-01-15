@@ -1,16 +1,22 @@
 <template>
-  <div id="app">
-    <div id="form">
-      <h3>Enter your note here!</h3>
-      <form>
-        <textarea v-model=note.body></textarea>
-        <button v-on:click.prevent='addNote(note)'>Add Note</button>
-      </form>
-    </div>
-    <div id="notes" v-for="note in notes" v-bind:key="note">
-      <textarea v-model=note.body></textarea>
-      <button v-on:click.prevent='updateNote(note.id, note)'>UPDATE</button>
-      <button v-on:click='deleteNote(note.id)'>DELETE</button>
+  <div class='container' id="app">
+    <div class='row text-center'>
+      <div class='col-3' id="form-container">
+        <form>
+          <label for="note-area" class="form-label h2"><strong>Enter your note here!</strong></label>
+          <textarea class='col-12 form-control' id="note-area" v-model=note.body></textarea>
+          <button class='btn btn-outline-success mt-2' v-on:click.prevent='addNote(note)'>Add Note</button>
+        </form>
+      </div>
+      <div class='container col-9' id='notes-container'>
+        <div class='row p-2' id="notes" v-for="note in notes" v-bind:key="note">
+          <textarea class='col-8' v-model=note.body></textarea>
+          <div id='btn-container'>
+            <button class='col-12 btn btn-outline-primary m-2 text-center' v-on:click.prevent='updateNote(note.id, note)'>UPDATE</button>
+            <button class='col-12 btn btn-outline-danger m-2' v-on:click='deleteNote(note.id)'>DELETE</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -66,23 +72,5 @@ export default {
 </script>
 
 <style>
-#user {
-  margin-bottom: 50px;
-}
-#notes {
-  padding: 10px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
 
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  display: flex;
-}
 </style>
