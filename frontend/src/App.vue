@@ -27,6 +27,7 @@ import axios from 'axios';
 
 export default {
   name: 'App',
+  // data is filled from the mount() and methods()
   data() {
     return {
       user: {},
@@ -41,6 +42,7 @@ export default {
   },
   computed: {
   },
+  // all methods use axios to reach out to our backend server
   methods: {
     getNotes: function() {
       axios.get('http://localhost:3001/api/note')
@@ -72,5 +74,8 @@ export default {
 </script>
 
 <style>
-
+/*
+Global styling in the assets folder
+where bootstrap is also imported
+*/
 </style>

@@ -1,4 +1,5 @@
-<!--
+<!-- File Unused
+
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -30,37 +31,19 @@
     </ul>
   </div>
 </template>
--->
-<template>
-  <div>
-    <h4>Julian</h4>
-    <p>note</p>
-  </div>
-</template>
+
 
 
 <script>
-// export default {
-//   name: 'HelloWorld',
-//   props: {
-//     msg: String
-//   }
-// }
-
 export default {
-  name: 'Notes',
-  data() {
-    author: 'Julian'
-    notes: [
-        'This is Note 1',
-        'This is Note 2'
-    ]
+  name: 'HelloWorld',
+  props: {
+    msg: String
   }
-
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 div {
   border: 1px solid black;
@@ -80,3 +63,5 @@ a {
   color: #42b983;
 }
 </style>
+
+-->

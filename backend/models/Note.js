@@ -2,8 +2,10 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection');
 
+
 class Note extends Model {}
 
+// creates table when sequelize syncs.
 Note.init(
   {
     id: {
