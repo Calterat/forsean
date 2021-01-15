@@ -34,7 +34,7 @@ Language(s) used in this project:
 
 ## Installation
 
-> Clone repo with `git clone git@github.com:Calterat/forsean`. Then dive into the directory where you will find the frontend directory and the backend directory. Navigate to the backend folder and start with `npm install`. Then, boot up your MySQL shell and `source db/schema.sql`. Quit out of the shell. `npm run seed` will insert tables and data into the Database we created with the schema. Now the backend server is ready to run. `npm start` will get you cooking. Leave the back end server running. Jump to the root and navigate to the frontend folder. Run this server with `npm run serve`. Open up your browser and go to `localhost:8080`. Enjoy!
+> Clone repo with `git clone git@github.com:Calterat/forsean`. Then dive into the directory where you will find the frontend directory and the backend directory. Navigate to the backend folder and start with `npm install`. Then, boot up your MySQL shell and `source db/schema.sql`. Quit out of the shell. Before the next step, you will need a .env file in the root of the backend folder. In it you will need 3 variables: `DB_NAME='notelogger'`,`DB_USER='<yourUserName>'`, and `DB_PW='<yourPasswordForMySQL'`. Back to the console, `npm run seed` will insert tables and data into the Database we created with the schema. Now the backend server is ready to run. `npm start` will get you cooking. Leave the back end server running. Jump to the root and navigate to the frontend folder. Run this server with `npm run serve`. Open up your browser and go to `localhost:8080`. Enjoy!
 
 
 ## Usage
@@ -43,7 +43,7 @@ Language(s) used in this project:
 
 
 ![Screenshot](./img/screenshot.png)
-[Here is a HowTo Video Link!](video.com)
+[Here is a HowTo Video Link!](https://drive.google.com/file/d/1HBzJovAfodmxLcZkL36Dw_U9bVebrJHz/view)
         
 
 
